@@ -1,2 +1,2 @@
-# tugasTKJ.github.io
+# tugasTKJ
 Rekapitulasi Tugas TKJ Rafa Hylmi Azzami
