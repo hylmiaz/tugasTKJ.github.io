@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+  transition: .3s;
+}
+
+h1 {
+  font-size: 3.14rem;
+  font-family: "Inter";
+  text-align: center;
+  color: #111;
+}
+
+h2 {
+  font-size: 1.94rem;
+  font-family: "Inter";
+  text-align: center;
+  color: #222;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-family: "Inter";
+  color: #333;
+}
+
+p,
+span {
+  font-size: 1.2rem;
+  font-family: "Inter";
+  color: #444;
+}
+
+img {
+  width: 100%;
+  border-radius: 0.74rem;
+}
+
+#author {
+  text-align: right;
+}
+
+#content {
+  padding-inline: 1rem;
+  display: grid;
+  justify-content: center;
+}
+
+#content > article {
+  max-width: 840px;
+}
+
+.chapter {
+  margin-top: 5.08rem;
+}
+
+.subchapter {
+  margin-top: 3.14rem;
+}
+
+.bubble-other {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-block: 0.28rem;
+}
+
+.bubble-other-content {
+  width: fit-content;
+  padding: 0.74rem;
+  background-color: #eee;
+  border-radius: 0rem 0.74rem 0.74rem 0.74rem;
+}
+
+.bubble-other-content span {
+  display: block;
+}
+
+span.sender {
+  margin-bottom: 0.28rem;
+  font-weight: bold;
+}
+
+.bubble-other::before {
+  border-top: 0.46rem solid #eee;
+  border-right: 0.46rem solid #eee;
+  border-bottom: 0.46rem solid transparent;
+  border-left: 0.46rem solid transparent;
+  content: "";
+  font-size: 0;
+  display: inline;
+}
+
+.bubble-me {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding-block: 0.28rem;
+}
+
+.bubble-me-content {
+  width: fit-content;
+  padding: 0.74rem;
+  background-color: #afa;
+  border-radius: 0.74rem 0rem 0.74rem 0.74rem;
+}
+
+.bubble-me::after {
+  border-top: 0.46rem solid #afa;
+  border-right: 0.46rem solid transparent;
+  border-bottom: 0.46rem solid transparent;
+  border-left: 0.46rem solid #afa;
+  content: "";
+  font-size: 0;
+  display: inline;
+}
+
+#atmosphere {
+  display: none;
+}
+
+@media screen and (max-width: 840px) {
+  #content > article {
+    margin-top: 64px;
+  }
+
+  #atmosphere {
+    height: 64px;
+    padding-inline: 1rem;
+    background-color: skyblue;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  #date {
+    font-size: 3.14rem;
+    color: #fff;
+  }
+
+  #mood > span {
+    display: block;
+  }
+
+  #time {
+    font-weight: bold;
+    color: #fffe;
+  }
+
+  #weather {
+    color: #fffd;
+  }
+
+  #sky {
+    width: 50px;
+    height: 50px;
+    margin-left: auto;
+  }
+
+  #sun {
+    width: 100%;
+    height: 100%;
+    background-color: #ff0;
+    border-radius: 100%;
+    display: block;
+  }
+}
